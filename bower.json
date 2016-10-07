@@ -1,0 +1,21 @@
+{
+  "name": "jT",
+  "description": "simple javascript controllers with events, with same syntax as extjs",
+  "main": "index.js",
+  "authors": [
+    "Hristomir Kotzev"
+  ],
+  "license": "ISC",
+  "keywords": [
+    "jquery",
+    "etxjs"
+  ],
+  "homepage": "https://github.com/Izopi4a/jT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ]
+}
