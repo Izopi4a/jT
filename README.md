@@ -34,7 +34,7 @@ jT.define("app.Controllers.Users", {
             components: {
                 "#koko" : { //or any jQuery selector
                     click: 'onKokoClick',
-                    submit: 'onKokoSubmit'
+                    //submit: 'onKokoSubmit'
                 }
             },
             events: {
@@ -107,7 +107,7 @@ Because of the events between controllers browser support is IE 11+
 
 ### Notes
 
-In ext you set your controllers and include them automatically. I can make it happen but i find it poinless because it will add a lot of code when it takes just few secs to add <script src="..">
+In ext you set your controllers and include them automatically. I can make it happen but i find it poinless because it will add a lot of code when it takes just few secs to add `<script src="..">`
 
 
 There are some helpers for strings,arrays,objects you can check them in src/lib/ folder.
