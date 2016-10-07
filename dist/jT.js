@@ -159,7 +159,7 @@
 
                 me.functionExists(funcName);
 
-                $el.on(name, function(){
+                var cb = function(){
 
                     var args = [$el];
 
@@ -168,7 +168,15 @@
                     });
 
                     me[funcName].apply(me, $el, args)
-                });
+                }
+
+                if (name === "ready"){
+                    
+                    $el.ready(cb);
+                } else {
+
+                    $el.on(name, cb);
+                }
             });
         });
     },
