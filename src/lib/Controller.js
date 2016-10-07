@@ -35,12 +35,25 @@
                         args.push(value);
                     });
 
-                    me[funcName].apply(me, $el, args)
+                    me[funcName].apply(me, args);
                 }
 
                 if (name === "ready"){
-                    
-                    $el.ready(cb);
+
+                    $el.ready(function(){
+
+                        if ( false === jT.Utils.isArray($el) ) {
+                            return;
+                        }
+
+                        var args = [$el];
+
+                        $.each(arguments, function(idx, value){
+                            args.push(value);
+                        });
+
+                        me[funcName].apply(me, args);
+                    });
                 } else {
 
                     $el.on(name, cb);

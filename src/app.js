@@ -6,6 +6,7 @@
         controller: {},
         Array: {},
         Object: {},
+        String: {},
 
         controllers: [],
         singletons: [],
