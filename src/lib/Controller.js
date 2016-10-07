@@ -11,13 +11,13 @@
 
         var me = this;
 
-        if ( 0 === jT.Utils.getObjectSize(components) ) {
+        if ( 0 === jT.Object.getSize(components) ) {
             return;
         }
 
         $.each(components, function (selector, ev) {
 
-            if ( 0 === jT.Utils.getObjectSize(ev) ) {
+            if ( 0 === jT.Object.getSize(ev) ) {
                 return true;
             }
 

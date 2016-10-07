@@ -8,7 +8,7 @@
      * @param scope
      * @returns {*|void}
      */
-    forEach: function(array, fn, scope) {
+    forEach: function (array, fn, scope) {
 
         return array.forEach(fn, scope);
     },
@@ -21,7 +21,7 @@
      * @param scope
      * @returns {*|Array}
      */
-    map: function(array, fn, scope) {
+    map: function (array, fn, scope) {
 
         return array.map(fn, scope);
     },
@@ -32,16 +32,17 @@
      * @param array
      * @returns {Array}
      */
-    clean: function(array) {
+    clean: function (array) {
+
         var results = [],
             i = 0,
             ln = array.length,
             item;
 
-        for (; i < ln; i++) {
+        for ( ; i < ln; i++ ) {
             item = array[i];
 
-            if (!jT.Utils.isEmpty(item, false)) {
+            if ( !jT.Utils.isEmpty(item, false) ) {
                 results.push(item);
             }
         }

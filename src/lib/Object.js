@@ -26,7 +26,7 @@
 
     eachValue: function(object, fn, scope) {
 
-        var i, property;
+        var property;
 
         scope = scope || object;
 
