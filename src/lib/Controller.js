@@ -40,20 +40,7 @@
 
                 if (name === "ready"){
 
-                    $el.ready(function(){
-
-                        if ( false === jT.Utils.isArray($el) ) {
-                            return;
-                        }
-
-                        var args = [$el];
-
-                        $.each(arguments, function(idx, value){
-                            args.push(value);
-                        });
-
-                        me[funcName].apply(me, args);
-                    });
+                    $el.ready(cb);
                 } else {
 
                     $el.on(name, cb);
